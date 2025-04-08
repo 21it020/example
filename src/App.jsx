@@ -15,6 +15,7 @@ import Counter from './components/Counter'
 import TodoList from './components/TodoList'
 import Profile from './components/Profile'
 import ShoppingList from './components/ShoppingList'
+import FetchData from './components/FetchData'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -34,10 +35,11 @@ function App() {
       {/* <ProductInfo name="Laptop" price={1000}/> */}
       {/* <ProductInfo/> */}
       {/* <Footer/> */}
-      <Counter/>  
+      {/* <Counter/>  
       <TodoList/>
       <Profile/>
-      <ShoppingList/>
+      <ShoppingList/> */}
+      <FetchData/>
     </>
   )
 }
