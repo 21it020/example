@@ -16,12 +16,15 @@ import TodoList from './components/TodoList'
 import Profile from './components/Profile'
 import ShoppingList from './components/ShoppingList'
 import FetchData from './components/FetchData'
+import UserInfo from './components/UserInfo'
+import { UserProvider } from './components/UserContext'
+import UpdateUser from './components/UpdateUser'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <UserProvider>
       {/* <Header/> */}
       {/* <MainContent/>
       <WelcomeMessage/>
@@ -39,8 +42,10 @@ function App() {
       <TodoList/>
       <Profile/>
       <ShoppingList/> */}
-      <FetchData/>
-    </>
+      {/* <FetchData/> */}
+      <UserInfo/>
+      <UpdateUser/>
+    </UserProvider>
   )
 }
 
