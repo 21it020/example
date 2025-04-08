@@ -41,7 +41,7 @@ const TodoList = () => {
             >
               {todo}
               <button className='ml-auto text-white' onClick={()=>{
-                setTodos(todos.filter(item => item !== todo))
+                setTodos(todos.filter((_, i) => i !== index))
                 }}>Delete</button>
             </li>
 
