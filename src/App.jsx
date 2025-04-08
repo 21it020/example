@@ -6,6 +6,8 @@ import MainContent from './components/MainContent'
 import Footer from './components/Footer'
 import WelcomeMessage from './components/WelcomeMessage'
 import JsxRules from './components/JsxRules'
+import ProductInfo from './components/ProductInfo'
+import ProductList from './components/ProductList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,9 +15,14 @@ function App() {
   return (
     <>
       <Header/>
-      <MainContent/>
+      {/* <MainContent/>
       <WelcomeMessage/>
-      <JsxRules/>
+      <Great/>
+      <JsxRules/> */}
+      <Great/>
+      <ProductList/>
+      {/* <ProductInfo name="Laptop" price={1000}/> */}
+      {/* <ProductInfo/> */}
       <Footer/>
     </>
   )

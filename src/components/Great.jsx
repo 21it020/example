@@ -19,9 +19,14 @@ import React from 'react'
 import Add from './Add'
 
 const Great = () => {
+  const name = "John"
+  const date = new Date()
+  
   return (
     <div>
       <h1>Great</h1>
+      <p>My name is {name}</p>
+      <p>Today is {date.toLocaleDateString()}</p>
      <Add/>
     </div>
   )
