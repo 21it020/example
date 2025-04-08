@@ -11,25 +11,33 @@ import ProductList from './components/ProductList'
 import UserList from './components/UserList'
 import Weather from './components/Weather'
 import UserStatus from './components/UserStatus'
+import Counter from './components/Counter'
+import TodoList from './components/TodoList'
+import Profile from './components/Profile'
+import ShoppingList from './components/ShoppingList'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header/>
+      {/* <Header/> */}
       {/* <MainContent/>
       <WelcomeMessage/>
       <Great/>
       <JsxRules/> */}
-      <Great/>
-      <UserList/>
-      <ProductList/>
-      <Weather/>
-      <UserStatus isLoggedIn={true} isAdmin={true}/>
+      {/* <Great/> */}
+      {/* <UserList/> */}
+      {/* <ProductList/> */}
+      {/* <Weather/> */}
+      {/* <UserStatus isLoggedIn={true} isAdmin={true}/> */}
       {/* <ProductInfo name="Laptop" price={1000}/> */}
       {/* <ProductInfo/> */}
-      <Footer/>
+      {/* <Footer/> */}
+      <Counter/>  
+      <TodoList/>
+      <Profile/>
+      <ShoppingList/>
     </>
   )
 }
