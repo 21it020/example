@@ -9,14 +9,17 @@ const ProductList = () => {
     { id: 4, name: 'Product 4', price: 40 },
 
     ];
+
+    // console.log({...products[0]})
   return (
     <div>
         <h1>Product List</h1>
         
         <ul>
             {products.map((product) => (
+              // console.log(product) 
                 <li key={product.id}>  
-                    <ProductInfo {...product} />
+                    <ProductInfo {...product}/>
                 </li>
             ))}
         </ul>

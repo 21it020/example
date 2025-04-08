@@ -1,4 +1,5 @@
 import React from 'react'
+import UserInfo from './UserInfo';
 
 const UserList = () => {
     const users = [
@@ -11,9 +12,9 @@ const UserList = () => {
     <div>
         <h1>User List</h1>
         <ul>
-            {users.map(({ id, name, age }) => (
-                <li key={id}>
-                    {name} - {age} years old
+            {users.map((user) => (
+                <li key={user.id}>
+                    <UserInfo {...user}/>
                 </li>
             ))}
         </ul>
