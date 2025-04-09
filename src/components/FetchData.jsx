@@ -1,21 +1,9 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import FetchApiData from "./FetchApiData";
 
 const FetchData = () => {
-  const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/posts"
-      );
-
-      const data = await response.json();
-      setData(data);
-    };
-    fetchData();
-  }, []);
-
+  const [data] = FetchApiData("https://jsonplaceholder.typicode.com/posts");
   return (
     <div>
       <h1>Fetch Data</h1>

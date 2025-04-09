@@ -19,7 +19,8 @@ import FetchData from './components/FetchData'
 import UserInfo from './components/UserInfo'
 import { UserProvider } from './components/UserContext'
 import UpdateUser from './components/UpdateUser'
-
+import FocusInput from './components/FocusInput'
+import Timer from './components/Timer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -42,9 +43,15 @@ function App() {
       <TodoList/>
       <Profile/>
       <ShoppingList/> */}
-      {/* <FetchData/> */}
-      <UserInfo/>
-      <UpdateUser/>
+      <FetchData/>
+      {/* <UserInfo/> */}
+      {/* <UpdateUser/> */}
+      {/* <FocusInput/> */}
+      {/* <Timer/> */}
+
+      <h1>Hello World</h1>
+      
+
     </UserProvider>
   )
 }
